@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        section{
+            border-style: solid;
+            border-width: 2px;
+            margin: 30%;
+           width: 30%;
+          padding: 10px;
+          background-color: ivory;
+        }
+      input{
+          width: 80%;
+      }
+    </style>
+</head>
+<body>
+     <section>
+    <form>
+
+       <center> <label> Register here </label> </center>
+        <br> <br> 
+        <label>Full Name</label> <br>
+        <input type="text" placeholder="Enter full name" required > 
+        <br><br>
+        <label>Mobile Number</label> <br>
+        <input type="number" placeholder="Enter 19 digit mobile number" required>
+        <br> <br>
+        <label>ID Proof</label><br>
+        <input type="file" > <br> <br>
+
+        <label>Address</label> <br>
+        <textarea rows="10" cols="20" placeholder="enter address "></textarea>
+         <br><br>
+         <label>User Id </label><br>
+         <input type="text ">
+         <br> <br>
+         <label>Password</label><br>
+         <input type="password" minlength="8">
+         <br> <br>
+       <center>  <button style="background-color: mediumblue;color: white;"submit" onclick="confirm()" >Register </button> </center>
+    </form>
+    </section> 
+    <script>
+         function confirm()
+         {
+             alert("User registered successfully");
+         }
+    </script>
+</body>
+</html>
